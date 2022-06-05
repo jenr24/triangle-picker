@@ -1,8 +1,9 @@
-# New Project
+# Triangle Picker
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+* Choose the color of a triangle rendered with WebGPU in this React/Snowpack app
+* Be sure to run this app only on browsers with enabled WebGPU (--enable-unsafe-webgpu for chrome)
 
-## Available Scripts
+## NPM Scripts
 
 ### npm start
 
