@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import App from './components/App';
+import { ColorModeScript } from '@chakra-ui/react'
+import { CheckWebGPU } from "./helper";
+import { Shaders } from './shaders';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(
   <React.StrictMode>
+    <ColorModeScript />
     <App />
   </React.StrictMode>,
-  document.getElementById('root'),
 );
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
